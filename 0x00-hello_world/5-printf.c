@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * Program to print using printf
- * Return value = o
+ * main - execution being in the main function
+ *
+ * Return: Always return 0 to show success
  */
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
-
 }
