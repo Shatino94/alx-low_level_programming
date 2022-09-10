@@ -1,36 +1,47 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-#include <math.h>
 
 /**
-*  main -  prints all possible combinations of single-digit numbers
-*
-* Return: numbers separate by comma
-*/
-
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char i = '0';
-	char j = '0';
-	char k = '0';
-	int a = 8;
-	
-	for (i = 0;i <= '9'; i++)
+	int i, j, y;
+
+	i = 48;
+	j = 49;
+	y = 50;
+	while  ((i < 56) && (j < 57) && (y < 58))
 	{
-	for (j = 0; j < '7'; j++)
+	putchar(i);
+	putchar(j);
+	putchar(y);
+	if ((i == 55) && (j == 56) && (y == 57))
 	{
-	for (k = 0; k < '3'; k++)
+	putchar('\n');
+	i++;
+	j++;
+	y++;
+	}
+	else
 	{
-	putchar (i);
-	putchar (i+1);
-	putchar (i+2);
 	putchar(',');
 	putchar(' ');
+	if (y < 57)
+	{
+	y++;
+	}
+	else if ((j < 56) && (y == 57))
+	{
+	y = 1 + ++j;
+	}
+	else
+	{
+	j = ++i + 1;
+	y = j + 1;
 	}
 	}
-	putchar(i);
 	}
-	putchar('\n');
 	return (0);
 }
