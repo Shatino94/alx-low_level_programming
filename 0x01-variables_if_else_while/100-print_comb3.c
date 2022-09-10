@@ -12,7 +12,9 @@
 int main(void)
 {
 	int n = 48;
+
 	size_t i = 0;
+
 	int a = 9;
 	while (i  <= a)
 	{    
