@@ -21,7 +21,8 @@ int main(void)
 	i = 0;
 	a = a--;
 	n = n-a;
-	}else
+	}
+	else
 	i++;
 	putchar(n);
 	putchar(n+1);
