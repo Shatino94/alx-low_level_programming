@@ -2,8 +2,6 @@
 #include <time.h>
 #include <stdio.h>
 #include <math.h>
-/* more headers goes there */
-
 /**
 *  main -  prints all possible combinations of single-digit numbers
 *
@@ -12,25 +10,31 @@
 int main(void)
 {
 	int n = 48;
+	int m = 49;
+	int j = 0;
+	int a = 8;
 
-	size_t i = 0;
-
-	int a = 9;
-	while (i  <= a)
-	{    
-	if (i == a)
+	int i=0;
+	while (i  <= a && a != -1)
 	{
-	i = 0;
-	a = a--;
-	n = n-a;
-	}
-	else
 	i++;
+	while (j <= a)
+	{
 	putchar(n);
-	putchar(n+1);
-	n++;
+	putchar(m);
+	if (n != 56 || m != 57)
+	{
 	putchar(',');
 	putchar(' ');
+	}
+	m++;
+	j++;
+	}
+	n++;
+	m = m - a;
+	a--;
+	i = 0;
+	j = 0;
 	}
 	putchar('\n');
 	return (0);
