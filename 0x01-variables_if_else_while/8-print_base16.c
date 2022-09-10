@@ -17,7 +17,7 @@ int main(void)
 	{
 	putchar(n);
 	if (n == 57)
-	n = 96;	
+	n = 96;
 	n++;
 	}
 	putchar('\n');
