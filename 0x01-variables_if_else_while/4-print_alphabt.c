@@ -11,7 +11,6 @@
 int main(void)
 {
 	char alph;
-	
 	alph = 'a';
 	while (alph <= 'z')
 	{
