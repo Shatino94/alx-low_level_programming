@@ -15,6 +15,7 @@ int main(void)
 	int a = 8;
 
 	int i = 0;
+
 	while (i  <= a && a != -1)
 	{
 	i++;
