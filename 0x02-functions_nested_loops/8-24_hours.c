@@ -11,7 +11,7 @@ void jack_bauer(void)
 	int hr;
 	int min;
 
-	for (int hr = 0; hr < 24; hr++)
+	for (hr = 0; hr < 24; hr++)
 	{
 		int min = 0;
 
