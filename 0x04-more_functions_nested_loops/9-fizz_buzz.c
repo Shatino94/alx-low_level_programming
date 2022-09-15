@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
-*main - program that prints either numbers[0-100], Fizz, Buzz, or FizzBuzz
+*main - program that prints either numbers[1-100], Fizz, Buzz, or FizzBuzz
 *
 *Return: Always 0
 */
 int main(void)
 {
-	int num = 1;
+	int num;
 
-	while (num++ < 100)
+	for (num = 1; num <= 100; num++)
 	{
 		if ((num % 3 == 0) && (num % 5 == 0))
 		{
