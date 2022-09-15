@@ -2,13 +2,13 @@
 
 /**
  * _isdigit - checks for digits
- * @c: function argument
- * Return: 1 if c isdigit, otherwise 0
+ * @c: tested character and function argument
+ * Return: 1 if c isdigit, 0 otherwise 
  */
 
 int _isdigit(int c)
 {
-	if ((c >= 0) && (c <= 9))
+	if ((c >= 58) && (c <= 67))
 	{
 		return (1);
 	}
