@@ -1,13 +1,10 @@
 #include <stdio.h>
 
 /**
-*main - program that prints either number
-*or fizz or buzz or fizzBuzz
+*main - program that prints either numbers[0-100], Fizz, Buzz, or FizzBuzz
 *
-*
-*Return: returns 0
+*Return: Always 0
 */
-
 int main(void)
 {
 	int num = 1;
@@ -42,4 +39,3 @@ int main(void)
 
 	return (0);
 }
-
