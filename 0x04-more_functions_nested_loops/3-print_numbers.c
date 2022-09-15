@@ -1,9 +1,10 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
  * print_numbers -  checks for checks for a digit (0 through 9).
  *
- * Return: Always 0.
+ * Return: nothing (void).
  */
 void print_numbers(void)
 {
@@ -13,5 +14,5 @@ void print_numbers(void)
 	{
 	_putchar(i);
 	}
-	_putchar('\n');
+	_putchar(10);
 }
