@@ -4,7 +4,7 @@
 /**
  * _strcpy - copy paste string
  * @dest: destination
- * @scr: source
+ * @src: source
  *
  * Return: Destination
  */
