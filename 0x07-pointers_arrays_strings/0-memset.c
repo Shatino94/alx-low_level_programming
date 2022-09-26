@@ -3,7 +3,7 @@
 /**
  * _memset - fill memory with a constant byte
  * @s:char
- * @b:char
+ * @c:char
  * @n:unsigned int
  * Return:char
  */
