@@ -3,17 +3,16 @@
 /**
  * _memset - fill memory with a constant byte
  * @s:char
- * @c:char
+ * @b:char
  * @n:unsigned int
  * Return:char
  */
-char *_memset(void *s, int c, size_t n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
-	unsigned char *memory = s, value = c;
 
 	for (i = 0; i < n; i++)
-		memory[i] = value;
+		s[i] = b;
 
-	return (memory);
+	return (s);
 }
