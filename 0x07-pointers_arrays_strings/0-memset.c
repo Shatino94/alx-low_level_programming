@@ -7,12 +7,13 @@
  * @n:unsigned int
  * Return:char
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(void *s, int c, size_t n)
 {
 	unsigned int i;
+	unsigned char *memory = s, value = c;
 
 	for (i = 0; i < n; i++)
-		s[i] = b;
+		memory[i] = value;
 
-	return (s);
+	return (memory);
 }

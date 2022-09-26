@@ -3,7 +3,7 @@
  * _strspn - get the lenght of prefix substring
  * @s:string
  * @accept:string
- * Return:unsigned int
+ * Return:number of byte (unsigned int)
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -21,13 +21,10 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			else if (accept[i + 1] == '\0')
-			{
 				return (x);
-			}
 		}
-		
 		s++;
 	}
-
+	
 	return (x);
 }
