@@ -4,7 +4,7 @@
  * main - Multiplies two positive numbers.
  * @argv: args
  * @argc: argument counts (n)
- *
+ *i
  * Description: If the number of arguments is incorrect or one number
  *              contains non-digits, the function exits with a status of 98.
  * Return: Always 0.
@@ -12,6 +12,7 @@
 int main(int argc, char *argv[])
 {
 	unsigned long mul;
+
 	int 1, j;
 
 	if (argc != 3)
@@ -19,6 +20,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
