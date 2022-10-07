@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Multiplies two positive numbers.
@@ -13,7 +15,7 @@ int main(int argc, char *argv[])
 {
 	unsigned long mul;
 
-	int 1, j;
+	int i, j;
 
 	if (argc != 3)
 	{
